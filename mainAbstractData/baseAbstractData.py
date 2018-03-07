@@ -2,6 +2,10 @@ class Stack(object):
     def __init__(self):
         self.items = []
 
+    def __str__(self):
+        print(self.items)
+        return str(type(self))
+
     def isEmpty(self):
         return self.items == []
 
